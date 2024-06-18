@@ -55,6 +55,7 @@ contract PolygonRollupManagerNotUpgraded is PolygonRollupManager {
         _setupRole(_UPDATE_ROLLUP_ROLE, timelock);
 
         // Admin roles
+        _setupRole(DEFAULT_ADMIN_ROLE, admin);
         _setupRole(_OBSOLETE_ROLLUP_TYPE_ROLE, admin);
         _setupRole(_CREATE_ROLLUP_ROLE, admin);
         _setupRole(_STOP_EMERGENCY_ROLE, admin);
